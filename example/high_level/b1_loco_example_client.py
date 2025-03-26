@@ -335,7 +335,7 @@ def main():
                 tar_posture.position = Position(0.35, 0.25, 0.1)
                 tar_posture.orientation = Orientation(0.0, 0.0, 0.0)
                 res = client.MoveHandEndEffector(tar_posture, 2000, B1HandIndex.kLeftHand)
-            elif input_cmd == "gopenl":
+            elif input_cmd == "":
                 motion_param = GripperMotionParameter()
                 motion_param.position = 500
                 motion_param.force = 100

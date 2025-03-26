@@ -170,7 +170,7 @@ PYBIND11_MODULE(booster_robotics_sdk_python, m) {
         .export_values();
 
     m.attr("B1JointCnt") = robot::b1::kJointCnt;
-
+    m.attr("B1JointCnt7DofArm") = robot::b1::kJointCnt7DofArm;
     py::enum_<robot::b1::LocoApiId>(m, "B1LocoApiId")
         .value("kChangeMode", robot::b1::LocoApiId::kChangeMode)
         .value("kMove", robot::b1::LocoApiId::kMove)
